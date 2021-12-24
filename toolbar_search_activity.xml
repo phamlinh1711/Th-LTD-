@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageButton
+            android:padding="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_backspace"
+            android:layout_gravity="left"
+            android:id="@+id/btn_Back" />
+        <EditText
+            android:background="@null"
+            android:textColorHint="#BEBEBE"
+            android:hint="Tìm kiếm..."
+            android:id="@+id/et_search"
+            android:layout_width="200dp"
+            android:layout_height="35dp" />
+        <ImageButton
+            android:padding="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_voice"
+            android:layout_gravity="right"
+            android:id="@+id/ic_voice" />
+
+</android.support.v7.widget.Toolbar>

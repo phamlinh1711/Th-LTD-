@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/sort_label"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:textColor="#BEBEBE"
+            android:id="@+id/tv_name_label"
+            android:textSize="18sp"
+            android:text="A"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_gravity="center_vertical"
+            android:id="@+id/line_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:padding="5dp"
+        android:onClick="msg"
+        android:background="@drawable/ripple_effect"
+        android:id="@+id/items_callLog">
+
+        <!--Image avata -->
+        <FrameLayout
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:src="@drawable/contact_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/img_contact"/>
+            <TextView
+                android:id="@+id/tvFname"
+                android:textColor="#FCFAFA"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+        <!--Infor call log-->
+        <LinearLayout
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center">
+
+            <!--Name-->
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="contact_name"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--Date-->
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="date"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF">
+                </TextView>
+
+                <!--Duration-->
+                <TextView
+                    android:id="@+id/tvDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="duration"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--<View
+        android:layout_gravity="center_vertical"
+        android:id="@+id/line"
+        android:layout_width="280dp"
+        android:layout_height="1dp"
+        android:background="#B3B3B3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"/>-->
+</LinearLayout>

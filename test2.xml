@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundFragment">
+    <include
+        android:id="@+id/addnewtoolbar"
+        layout="@layout/toolbar_addnew"/>
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_person_outline_black_24dp"
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/colorHintTextLight"
+            android:hint="Name"
+            android:layout_weight=".7"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorHintTextLight"/>
+        <TextView
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/admin"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_call_black_24dp"
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtPhone"
+            android:textColor="@color/white"
+            android:textColorHint="@color/colorHintTextLight"
+            android:hint="Phone"
+            android:layout_weight=".7"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorHintTextLight"
+            android:inputType="number"/>
+        <ImageButton
+            android:id="@+id/btn_expand_add"
+            android:layout_gravity="center_vertical"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_down_arrow"
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_marginLeft="62dp"-->
+        <!--android:layout_marginRight="62dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_mail"
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtEmail"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorHintTextLight"
+            android:hint="Email"
+            android:layout_weight=".7"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorHintTextLight"/>
+        <TextView
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

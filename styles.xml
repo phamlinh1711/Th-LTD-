@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionOverflowButtonStyle">@style/CustomOverflowButton</item>
+
+    </style>
+    //Custom OverflowButton
+    <style name="CustomOverflowButton" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:src">@drawable/ic_overflow</item>
+        <item name="android:paddingRight">15dp</item>
+
+    </style>
+
+</resources>
